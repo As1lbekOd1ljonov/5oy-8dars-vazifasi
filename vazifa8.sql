@@ -54,4 +54,5 @@ SELECT first_name FROM employees WHERE first_name LIKE '%a%';
 
 SELECT project_name, end_date FROM projects WHERE end_date IS NULL;
 
+SELECT department_id, ROUND(AVG(salary)) AS average_salary FROM employees GROUP BY department_id;
 
