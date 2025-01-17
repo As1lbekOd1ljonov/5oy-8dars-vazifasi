@@ -28,17 +28,15 @@ INSERT INTO employees (id, first_name, last_name, employees_position, salary, hi
 (4, 'Zarina', 'Abdullayeva', 'HR Specialist', 1800, '2019-11-11', 1),
 (5, 'Jasur', 'Aliyev', 'Developer', 2400, '2023-02-01', 2);
 
-INSERT INTO departments (id, department_name)
-VALUES 
-    (1, 'Administration'),
-    (2, 'IT'),
-    (3, 'Design');
+INSERT INTO departments (id, department_name) VALUES 
+(1, 'Administration'),
+(2, 'IT'),
+(3, 'Design');
 
-INSERT INTO projects (id, project_name, start_date, end_date, budjet)
-VALUES 
-    (1, 'New Website', '2023-01-10', '2023-06-30', 50000),
-    (2, 'Mobile App', '2022-08-15', '2023-03-20', 30000),
-    (3, 'CRM System', '2024-02-01', NULL, 60000);
+INSERT INTO projects (id, project_name, start_date, end_date, budjet) VALUES 
+(1, 'New Website', '2023-01-10', '2023-06-30', 50000),
+(2, 'Mobile App', '2022-08-15', '2023-03-20', 30000),
+(3, 'CRM System', '2024-02-01', NULL, 60000);
 
 SELECT first_name || ' '|| last_name as full_name FROM employees;
 
